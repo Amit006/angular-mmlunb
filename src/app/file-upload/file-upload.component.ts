@@ -34,6 +34,9 @@ export class FileUploadComponent implements OnInit {
       this.imageURL = reader.result as string;
     }
     reader.readAsDataURL(file);
+    console.log(' reader.readAs: ',
+    reader.readAsDataURL(file)
+    )
   }
 
   // Submit Form
